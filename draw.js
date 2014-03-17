@@ -12,6 +12,7 @@ function makeCloudElements(amount){
   return clouds;
 }
 function drawGround(){
+  //automate to allow for variation between refresh
   var canvas = document.getElementById('ground');
   var grassGreen = '#49E20E';
   if(canvas){
@@ -41,6 +42,7 @@ function drawGround(){
 }
 
 function drawCloud(canvasElm){
+  //automate to allow for variation during refresh
   var canvas = canvasElm[0];
   var cloudWhite = '#ffffff';
   if(canvas){
