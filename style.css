@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color:#009ACD;
+}
+
+#canvas{
+  border:1px solid black;
+}
+
+h1{
+  padding-top:35px;
+  color:black;
+  text-align:center;
+  font-family:'Duru Sans', sans-serif;
+}
+
+.inputBox{
+  border-radius:5px;
+  width:74%;
+  height:25px;
+}
+
+div.box input[type="text"]{
+  margin-top:10px;
+  border:1px solid yellow;
+}
+
+div.box input[type="password"]{
+  margin-top:7px;
+  border:1px solid yellow;
+}
+
+span{
+  margin-top:10px;
+}
+
+.btn{
+  margin-top:10px;
+  background-color:#ffff66;
+  border-radius:5px;
+  width:74%;
+  height: 30px;
+  border:0.5px solid yellow;
+}
+.btn:hover{
+  background-color:yellow;
+}
+
+
+.container{
+}
+
+#ground{
+  margin-top:35%;
+  position:absolute;
+  border-bottom:10px solid #49E20E;
+  margin-bottom:0;
+}
+
+.see{
+}
+
+#cloud{
+  padding:0;
+  margin-top:150px;
+  margin-left:-200px;
+  z-index:-1;
+  position:absolute;
+}
+
+.cloudMoveRight{
+  animation:cloudMove 5s infinite;
+  -webkit-animation: cloudMove 200s infinite;
+  position:absolute;
+}
+
+@keyframes cloudMove{
+  0%  {transform:translate(40px);}
+  10% {transform:translate(100px);}
+  20% {transform:translate(200px);}
+  30% {transform:translate(300px);}
+  100%  {}
+}
+
+@-webkit-keyframes cloudMove{
+  0%  {-webkit-transform:translate(10px);}
+  10% {-webkit-transform:translate(50px);}
+  20% {-webkit-transform:translate(100px);}
+  30% {-webkit-transform:translate(150px);}
+  40%  {-webkit-transform:translate(200px);}
+  50% {-webkit-transform:translate(400px);}
+  60% {-webkit-transform:translate(600px);}
+  70% {-webkit-transform:translate(800px);}
+  80% {-webkit-transform:translate(1000px);}
+  90% {-webkit-transform:translate(1200px);}
+  100% {-webkit-transform:translate(1500px);}
+}
+
+
+.spacer{
+
+}
+
+.box {
+  text-align:center;
+  border: 2px solid yellow;
+  background-image:url('login.jpg');
+  border-radius:5px;
+  width:25%;
+  min-width:250px;
+  margin-top:140px;
+  height:225px;
+  margin-left:37.5%;
+  position:absolute;
+  margin-right:37.5%;
+  display:inline-block;
+  box-shadow: 5px 5px 5px black;
+  opacity:.95;
+}
+
+.error{
+  color: red;
+}
+
+input[type="submit"]:focus{
+}
