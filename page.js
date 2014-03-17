@@ -1,4 +1,5 @@
 $(document).ready(function (){
+  //Move these to a seperate function
   var clouds = makeCloudElements(Math.floor(Math.random()*11 + 20));
   for(var i = 0; i < clouds.length; i++){
     var posx = Math.floor(Math.random()*1500 + 1);
