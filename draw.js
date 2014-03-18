@@ -19,6 +19,7 @@ function makeCloudElements(amount){
   return clouds;
 }
 function drawGround(){
+  //automate to allow for variation between refresh
   var canvas = document.getElementById('ground');
   if(canvas){
     var ctx = canvas.getContext('2d');
@@ -62,6 +63,7 @@ function drawGround(){
 }
 
 function drawCloud(canvasElm){
+  //automate to allow for variation during refresh
   var canvas = canvasElm[0];
   if(canvas){
     var ctx = canvas.getContext('2d');

@@ -13,7 +13,12 @@ function cloudCheck(){
 }
 
 $(document).ready(function (){
+
   var clouds = makeCloudElements(Math.floor(Math.random()*11 + 10));
+
+  //Move these to a seperate function
+
+
   for(var i = 0; i < clouds.length; i++){
     var posx = Math.floor(Math.random()*1500 + 1);
     var posy = Math.floor(Math.random()*700 + 1);
